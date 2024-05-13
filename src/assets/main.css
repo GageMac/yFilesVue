@@ -1,0 +1,43 @@
+@import './base.css';
+
+/* Apply styles to the entire body */
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #8a8a8a;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style links and elements with class 'green' */
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+/* Change link color on hover */
+a:hover {
+  background-color: hsla(160, 100%, 37%, 0.2);
+}
+
+/* Apply styles to the #app element */
+#app {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  padding: 2rem;
+}
+
+/* Adjust layout for larger screens */
+@media (min-width: 1024px) {
+  #app {
+    flex-direction: row; /* Arrange children side by side */
+    justify-content: center; /* Center children horizontally */
+    padding: 2rem 0; /* Adjust padding */
+    gap: 2rem; /* Add space between children */
+  }
+}
